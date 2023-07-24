@@ -91,7 +91,7 @@ function NewPostForm() {
                     </div>
                     <NavLink to="/profil">
                         <div className="user-info">
-                            <img src={userData.picture} alt="user-img"></img>
+                            <img src={`https://delagram-app-api.onrender.com/client/public/uploads/profil/${userData.picture}`} alt="user-img"></img>
                         </div>
                     </NavLink>
                     <div className="post-form">
@@ -99,7 +99,7 @@ function NewPostForm() {
                         {message || postPicture || video.length > 20 ? (
                             <li className="card-container">
                                 <div className="card-left">
-                                    <img src={userData.picture} alt="user-pic"></img>
+                                    <img src={`https://delagram-app-api.onrender.com/client/public/uploads/profil/${userData.picture}`} alt="user-pic"></img>
                                 </div>
                                 <div className="card-right">
                                     <div className="card-header">

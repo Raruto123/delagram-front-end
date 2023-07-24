@@ -30,7 +30,7 @@ function CardComment({post}) {
                             {usersData.map((user) => {
                                 if (user._id === comment.commenterId) {
                                     return(
-                                        <img src={user.picture} alt="comment-pic"></img>
+                                        <img src={`https://delagram-app-api.onrender.com/client/public/uploads/profil/${user.picture}`} alt="comment-pic"></img>
                                     )
                                 }
                                 return null
