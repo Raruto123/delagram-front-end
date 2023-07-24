@@ -26,7 +26,7 @@ function Index() {
             <Route path="/profil" element = {<Profil></Profil>}></Route>
             <Route path="/decouvrir" element = {<Decouvrir></Decouvrir>}></Route>
             {/* //si tu mets localhost:3000/n'importe quoi ça te ramène à accueil */}
-            {/* <Route path="*" element = {<Navigate to={"/"} replace></Navigate>}></Route>  */}
+            <Route path="*" element = {<Navigate to={"/"} replace></Navigate>}></Route> 
         </Routes>
         </>
     )
