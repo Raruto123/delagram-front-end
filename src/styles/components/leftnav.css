@@ -1,0 +1,386 @@
+
+.left-nav-container {
+    position: relative;
+}
+
+.icons {
+    position: fixed;
+    z-index: 10;
+}
+
+.icons-bis {
+    position: absolute;
+    left: 30px;
+    border-right: solid black;
+    height: 2000px;
+}
+
+.icons-bis a {
+    display: inline-block;
+    margin: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.plus-wrapper {
+    margin-left: 20px;
+    margin-top: 150px;
+}
+
+.plus-wrapper button {
+    border: none;
+    background-color: transparent;
+}
+.plus-wrapper li {
+    list-style: none;
+}
+
+.plus {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.plus img {
+    margin-right: 17px;
+    height: 30px;
+    width: 30px;
+}
+
+.logout-container {
+    display: flex;
+    align-items: center;
+}
+.logout-container img {
+    height: 22px;
+    width: 22px;
+}
+
+.logout-container li {
+    list-style: none;
+}
+
+.left-nav-logo-container img {
+    height: 50px;
+    width: 120px;
+}
+.left-nav-logo-container img[src="./img/icons/delagram-icon2.png"] {
+    height: 30px;
+    width: 30px;
+}
+
+.left-nav-accueil-container img {
+    height: 30px;
+    width: 30px;
+}
+.left-nav-decouvrir-container img {
+    height: 30px;
+    width: 30px;
+}.left-nav-profil-container img {
+    height: 30px;
+    width: 30px;
+}.left-nav-creer-container img {
+    height: 30px;
+    width: 30px;
+}
+
+.left-nav-accueil-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left-nav-decouvrir-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left-nav-profil-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left-nav-creer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+.icons-bis {
+    display: flex;
+    flex-direction: column;
+    border-right: solid black;
+    width: 1px;
+}
+
+.icons-bis a {
+    /* position: relative;
+    top: 1px;
+    left:100px;
+    right: 100px ;
+    bottom: 100px ; */
+    width: 1%;
+    margin-left: -20px;
+    margin-bottom: 1px;
+    text-decoration: none;
+    color: black;
+}
+
+.plus-wrapper {
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.plus {
+    margin-left: -40px;
+}
+
+.logout-container {
+    margin-left: -30px;
+}
+
+
+
+      /* Cacher les paragraphes et afficher les images */
+  .left-nav-accueil-container p,
+  .left-nav-decouvrir-container p,
+  .left-nav-profil-container p,
+  .left-nav-creer-container p,
+  .plus p,
+  .logout-container p {
+    display: none;
+  }
+
+  .left-nav-accueil-container img,
+  .left-nav-decouvrir-container img,
+  .left-nav-profil-container img,
+  .left-nav-creer-container img {
+    display: block;
+  }
+  .left-nav-logo-container img[src="./img/Capture d’écran 2023-07-17 à 16.38.21.png"] {
+    display: none;
+  }
+
+  /* Afficher l'image "delagram-icon2.png" */
+  .left-nav-logo-container img[src="./img/icons/delagram-icon2.png"] {
+    margin-left: -15px;
+    display: block;
+  }
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+  /* Afficher l'image "Capture d’écran 2023-07-17 à 16.38.21.png" */
+  .left-nav-logo-container img[src="./img/Capture d’écran 2023-07-17 à 16.38.21.png"] {
+    display: block;
+  }
+
+  /* Cacher l'image "delagram-icon2.png" */
+  .left-nav-logo-container img[src="./img/icons/delagram-icon2.png"] {
+    display: none;
+  }
+  .icons-bis {
+    display: flex;
+    flex-direction: column;
+    border-right: solid black;
+    width: 150px;
+}
+
+.icons-bis a {
+    /* position: relative;
+    top: 1px;
+    left:100px;
+    right: 100px ;
+    bottom: 100px ; */
+    width: 100%;
+    margin-left: -20px;
+    margin-bottom: 1px;
+    text-decoration: none;
+    color: black;
+}
+
+.plus-wrapper {
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.plus {
+    font-size: 15px;
+    margin-left: 0px;
+}
+.plus img {
+    margin-right: 40px;
+}
+
+.logout-container {
+    margin-left: -0px;
+    margin-top: -20px;
+}
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 992px) {
+      /* Afficher l'image "Capture d’écran 2023-07-17 à 16.38.21.png" */
+  .left-nav-logo-container img[src="./img/Capture d’écran 2023-07-17 à 16.38.21.png"] {
+    display: block;
+  }
+
+  /* Cacher l'image "delagram-icon2.png" */
+  .left-nav-logo-container img[src="./img/icons/delagram-icon2.png"] {
+    display: none;
+  }
+  .icons-bis {
+    display: flex;
+    flex-direction: column;
+    border-right: solid black;
+    width: 200px;
+}
+
+.icons-bis a {
+    /* position: relative;
+    top: 1px;
+    left:100px;
+    right: 100px ;
+    bottom: 100px ; */
+    width: 100%;
+    margin-left: -20px;
+    margin-bottom: 1px;
+    text-decoration: none;
+    color: black;
+}
+
+.plus-wrapper {
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.plus {
+    font-size: 15px;
+    margin-left: 0px;
+}
+.plus img {
+    margin-right: 80px;
+}
+
+.logout-container {
+    margin-left: 40px;
+    margin-top: -20px;
+}
+
+.left-nav-logo-container img {
+    height: 50px;
+    width: 120px;
+    margin-left: 50px;
+}
+  }
+
+  @media screen and (min-width: 993px) and (max-width: 1200px) {
+          /* Afficher l'image "Capture d’écran 2023-07-17 à 16.38.21.png" */
+  .left-nav-logo-container img[src="./img/Capture d’écran 2023-07-17 à 16.38.21.png"] {
+    display: block;
+  }
+
+  /* Cacher l'image "delagram-icon2.png" */
+  .left-nav-logo-container img[src="./img/icons/delagram-icon2.png"] {
+    display: none;
+  }
+  .icons-bis {
+    display: flex;
+    flex-direction: column;
+    border-right: solid black;
+    width: 200px;
+}
+
+.icons-bis a {
+    /* position: relative;
+    top: 1px;
+    left:100px;
+    right: 100px ;
+    bottom: 100px ; */
+    width: 100%;
+    margin-left: -20px;
+    margin-bottom: 1px;
+    text-decoration: none;
+    color: black;
+}
+
+.plus-wrapper {
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.plus {
+    font-size: 15px;
+    margin-left: 0px;
+}
+.plus img {
+    margin-right: 80px;
+}
+
+.logout-container {
+    margin-left: 40px;
+    margin-top: -20px;
+}
+
+.left-nav-logo-container img {
+    height: 50px;
+    width: 120px;
+    margin-left: 50px;
+}
+  }
+
+  @media screen and (min-width: 1201px) {
+          /* Afficher l'image "Capture d’écran 2023-07-17 à 16.38.21.png" */
+  .left-nav-logo-container img[src="./img/Capture d’écran 2023-07-17 à 16.38.21.png"] {
+    display: block;
+  }
+
+  /* Cacher l'image "delagram-icon2.png" */
+  .left-nav-logo-container img[src="./img/icons/delagram-icon2.png"] {
+    display: none;
+  }
+  .icons-bis {
+    display: flex;
+    flex-direction: column;
+    border-right: solid black;
+    width: 200px;
+}
+
+.icons-bis a {
+    /* position: relative;
+    top: 1px;
+    left:100px;
+    right: 100px ;
+    bottom: 100px ; */
+    width: 100%;
+    margin-left: -20px;
+    margin-bottom: 1px;
+    text-decoration: none;
+    color: black;
+}
+
+.plus-wrapper {
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.plus {
+    font-size: 15px;
+    margin-left: 0px;
+}
+.plus img {
+    margin-right: 80px;
+}
+
+.logout-container {
+    margin-left: 40px;
+    margin-top: -20px;
+}
+
+.left-nav-logo-container img {
+    height: 50px;
+    width: 120px;
+    margin-left: 50px;
+}
+  }

@@ -1,0 +1,149 @@
+/* div {
+    border: 1px black dashed;
+} */
+@font-face {
+    font-family: "Grandista" ;
+    src: url("../fonts/Grandista.ttf") format("truetype");
+}
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  } */
+  
+  .registration_page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+    width: 100%;
+    padding: 0;
+    margin: 9px 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .registration-right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    padding: 0;
+    
+  }
+  
+  .registration-form-div {
+    max-width: 350px;
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #e7e6e6;
+    border-radius: 4px;
+  }
+  
+  .registration-logo-container {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  
+  .registration-logo {
+    font-family: Grandista;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  .registration-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin-bottom: 16px;
+    color: gray;
+  }
+  
+  input {
+    background-color: #e7e6e6;
+    border: #e7e6e6 solid;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="checkbox"],
+  label {
+    margin-bottom: 8px;
+  }
+  
+  input[type="submit"] {
+    background-color: #3897f0;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  
+  .already-connected {
+    text-align: center;
+    width: 385px;
+    border: 1px solid #e7e6e6;
+  }
+
+  .already-connected a {
+    color: #0f5ff0;
+    text-decoration: none;
+  }
+
+
+  .email-error {
+    color: red;
+    text-align: center;
+  }
+  .pseudo-error {
+    color: red;
+    text-align: center;
+  }
+  .password-error {
+    color: red;
+    text-align: center;
+  }
+  .controlpassword-error {
+    color: red;
+    text-align: center;
+  }
+  .terms-error {
+    color: red;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 480px) {
+
+    .already-connected {
+      text-align: center;
+      border: 1px solid #e7e6e6;
+    }
+
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 992px) {
+  }
+
+  @media screen and (min-width: 993px) and (max-width: 1200px) {
+  }
+
+  @media screen and (min-width: 1201px) {
+  }

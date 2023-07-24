@@ -1,0 +1,389 @@
+/* div {
+    border: 1px black solid;
+} */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+
+.connection-needed {
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+/* Pour le conteneur principal de la page */
+
+  
+  /* Pour le volet de gauche (LeftNav) */
+
+  
+  /* Pour la section principale contenant les suggestions d'abonnements (FriendsHint) */
+
+  
+  /* Pour le message d'invitation à se connecter (connexion requise) */
+
+  
+
+  
+  /* Pour la liste des suggestions d'abonnements */
+  .get-friends-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .get-friends-container h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  /* Pour chaque suggestion d'abonnement */
+  .user-hint {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .user-hint img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+  }
+  
+  .user-hint p {
+    flex-grow: 1;
+    font-size: 16px;
+    width: 500px;
+  }
+  
+  /* Pour le bouton Suivre */
+  .follow-btn {
+    background-color: #3897f0;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Pour le bouton Abonné */
+  .unfollow-btn {
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Styles supplémentaires pour les icônes */
+
+  
+
+
+  /* Styles pour les appareils avec une largeur d'écran <= 480px (Smartphone format portrait) */
+@media screen and (max-width: 480px) {
+  .main {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .get-friends-container {
+    max-width: 60%;
+  }
+
+  .get-friends-container h4 {
+    font-size: 100%;
+  }
+
+  .user-hint {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20%;
+  }
+
+  .user-hint img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 5%;
+    object-fit: cover;
+  }
+
+  .user-hint p {
+    flex-grow: 1;
+    font-size: 100%;
+    width: 500px;
+  }
+
+  .follow-btn {
+    background-color: #3897f0;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .unfollow-btn {
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    padding: 5px 10px;
+    font-size: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .connection-needed {
+    font-size: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-left: 50px;
+}
+
+  /* Mettre ici les styles spécifiques pour chaque élément qui nécessite des modifications pour Smartphone format portrait */
+}
+
+/* Styles pour les appareils avec une largeur d'écran > 480px et <= 768px (Smartphone format paysage) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .get-friends-container {
+    max-width: 50%;
+  }
+
+  .get-friends-container h4 {
+    font-size: 100%;
+  }
+
+  .user-hint {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20%;
+  }
+
+  .user-hint img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 5%;
+    object-fit: cover;
+  }
+
+  .user-hint p {
+    flex-grow: 1;
+    font-size: 100%;
+    width: 500px;
+  }
+
+  .follow-btn {
+    background-color: #3897f0;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .unfollow-btn {
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    padding: 5px 10px;
+    font-size: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .connection-needed {
+    font-size: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-left: 200px;
+}
+  /* Mettre ici les styles spécifiques pour chaque élément qui nécessite des modifications pour Smartphone format paysage */
+}
+
+/* Styles pour les appareils avec une largeur d'écran > 768px et <= 992px (Tablette format portrait) */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .main {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .get-friends-container {
+    max-width: 40%;
+  }
+
+  .get-friends-container h4 {
+    font-size: 100%;
+  }
+
+  .user-hint {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20%;
+  }
+
+  .user-hint img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 5%;
+    object-fit: cover;
+  }
+
+  .user-hint p {
+    flex-grow: 1;
+    font-size: 100%;
+    width: 500px;
+  }
+
+  .follow-btn {
+    background-color: #3897f0;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .unfollow-btn {
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    padding: 5px 10px;
+    font-size: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .connection-needed {
+    font-size: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-left: 200px;
+}
+
+  /* Mettre ici les styles spécifiques pour chaque élément qui nécessite des modifications pour Tablette format portrait */
+}
+
+/* Styles pour les appareils avec une largeur d'écran > 992px et <= 1200px (Tablette format paysage) */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .main {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .get-friends-container {
+    max-width: 30%;
+  }
+
+  .get-friends-container h4 {
+    font-size: 100%;
+  }
+
+  .user-hint {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20%;
+  }
+
+  .user-hint img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 5%;
+    object-fit: cover;
+  }
+
+  .user-hint p {
+    flex-grow: 1;
+    font-size: 100%;
+    width: 500px;
+  }
+
+  .follow-btn {
+    background-color: #3897f0;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .unfollow-btn {
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    padding: 5px 10px;
+    font-size: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .connection-needed {
+    font-size: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-left: 200px;
+}
+
+  /* Mettre ici les styles spécifiques pour chaque élément qui nécessite des modifications pour Tablette format paysage */
+}
+
+/* Styles pour les appareils avec une largeur d'écran > 1200px (PC portable ou fixe) */
+@media screen and (min-width: 1201px) {
+  .main {
+    padding: 50px;
+  }
+
+  .connection-needed {
+    font-size: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-left: 200px;
+}
+
+  /* Mettre ici les styles spécifiques pour chaque élément qui nécessite des modifications pour PC portable ou fixe */
+}

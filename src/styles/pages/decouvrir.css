@@ -1,0 +1,389 @@
+/* CSS pour la page Decouvrir.js */
+  
+/* Styles pour les appareils avec une largeur d'écran <= 480px (Smartphone format portrait) */
+@media screen and (max-width: 480px) {
+    .right-side {
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;  
+      width: 15%;
+      margin-left: 45%;
+    }
+
+
+    .thread-container {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: 66px 1fr;
+        /* border-image: linear-gradient(45deg, #8C52FF, #FF5757) 1; */
+        position: relative;
+        width: 100%;
+      }
+
+      .card-left img {
+        height: 52px;
+        width: 52px;
+        border-radius: 30px;
+        box-shadow: 1px 1px 3px rgba(51, 51, 51, 0.192);
+        object-fit: cover;
+      }
+
+      .card-header {
+        display: flex;
+        justify-content: space-between;
+        min-height: 35px;
+      }
+
+      .pseudo {
+        font-size: 100%;
+        display: flex;
+        align-items: baseline;
+      }
+
+      .pseudo img {
+        height: 22px;
+        width: 22px;
+      }
+      .card-header span {
+        font-size: 100%;
+        font-style: italic;
+      }
+
+      .card-pic img {
+        width: 100px;
+        border-radius: 6px;
+        margin-top: 12px;
+        box-shadow: 0 0 3px rgba(51, 51, 51, 0.342);
+      }
+
+      .update-post textarea {
+        font-size: 100%;
+        border: 1px solid #8C52FF;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding: 10px;
+        border-radius: 20px 20px 6px 20px;
+      }
+    /* Mettre ici les styles spécifiques pour chaque élément qui nécessite des modifications pour Smartphone format portrait */
+  }
+  
+  /* Styles pour les appareils avec une largeur d'écran > 480px et <= 768px (Smartphone format paysage) */
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .right-side {   
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;  
+      width: 60%;
+      margin-left: 20%;
+    }
+
+    .thread-container {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: 66px 1fr;
+        /* border-image: linear-gradient(45deg, #8C52FF, #FF5757) 1; */
+        position: relative;
+        width: 100%;
+      }
+  
+    /* Mettre ici les styles spécifiques pour chaque élément qui nécessite des modifications pour Smartphone format paysage */
+  }
+  
+  /* Styles pour les appareils avec une largeur d'écran > 768px et <= 992px (Tablette format portrait) */
+  @media screen and (min-width: 769px) and (max-width: 992px) {
+    .right-side {
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;  
+      width: 100%;
+      margin-left: 9%;
+    }
+    
+    .thread-container {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: 66px 1fr;
+        /* border-image: linear-gradient(45deg, #8C52FF, #FF5757) 1; */
+        position: relative;
+        width: 100%;
+      }
+    /* Mettre ici les styles spécifiques pour chaque élément qui nécessite des modifications pour Tablette format portrait */
+  }
+  
+  /* Styles pour les appareils avec une largeur d'écran > 992px et <= 1200px (Tablette format paysage) */
+  @media screen and (min-width: 993px) and (max-width: 1200px) {
+    .right-side {
+      padding: 40px;
+    }
+  
+    /* Mettre ici les styles spécifiques pour chaque élément qui nécessite des modifications pour Tablette format paysage */
+  }
+  
+  /* Styles pour les appareils avec une largeur d'écran > 1200px (PC portable ou fixe) */
+  @media screen and (min-width: 1201px) {
+    .right-side {
+      padding: 50px;
+    }
+  
+    /* Mettre ici les styles spécifiques pour chaque élément qui nécessite des modifications pour PC portable ou fixe */
+  }
+  
+  /* Les styles communs à tous les appareils */
+  /* Ajoutez ici les styles qui ne nécessitent pas de modifications en fonction de la largeur de l'écran */
+  
+  .right-side {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;  
+}
+  
+  /* CSS pour Thread.js */
+  
+  .thread-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* CSS pour Card.js */
+  
+  .card-container {
+    display: grid;
+    grid-template-columns: 66px 1fr;
+    border: 2px solid black ;
+    /* border-image: linear-gradient(45deg, #8C52FF, #FF5757) 1; */
+    margin: 10px;
+    padding: 16px;
+    border-radius: 20px;
+    margin: 8px auto;
+    position: relative;
+    min-height: 100px;
+  }
+
+  .card-left img {
+    height: 52px;
+    width: 52px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 3px rgba(51, 51, 51, 0.192);
+    object-fit: cover;
+  }
+ 
+  /* .pseudo-pic {
+    height: 52px;
+    width: 52px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 3px rgba(51, 51, 51, 0.192);
+    object-fit: cover;
+  } */
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 2px 0 4px;
+    min-height: 35px;
+  }
+
+  .pseudo {
+    display: flex;
+    align-items: baseline;
+  }
+  .pseudo img {
+    height: 22px;
+    width: 22px;
+  }
+
+  .card-header span {
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+
+  
+  .card-pic {
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 12px;
+    box-shadow: 0 0 3px rgba(51, 51, 51, 0.342);
+  }
+
+
+  .update-post textarea {
+    font-size: 1.3rem;
+    border: 1px solid #8C52FF;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 10px;
+    border-radius: 20px 20px 6px 20px;
+  }
+
+  .btn {
+    background: #8c52ff7d;
+    width: 240px;
+    transform: translateY(-3px);
+  }
+
+  iframe {
+    width: 100%;
+    min-height: 330px;
+    border-radius: 6px;
+    box-shadow: 0 0 3px rgba(51, 51, 51, 0.342);
+  }
+
+  .button-container {
+    justify-content: flex-end;
+    display: flex; 
+  }
+  .button-container img {
+    height: 22px;
+    width: 22px;
+  }
+
+  .button-container div {
+    padding: 5px 9px;
+    margin-left: 5px;
+    border-radius: 50px;
+    background-color: #d0d0d0;
+    cursor: pointer;
+  }
+
+
+
+  .card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 12px 0 4px;
+  }
+
+  .card-footer img {
+    height: 22px;
+    width: 22px;
+    cursor: pointer;
+  }
+
+  .comment-icon, .like-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .like-container span {
+    font-size: 1.02rem;
+    position: absolute;
+    transform: translate(29px, 2px);
+  }
+
+  .comment-container.client {
+    background: #ff575768;
+    border: 5px solid #8C52FF;
+    border-radius: 20px 20px 6px 20px;
+  }
+  .comment-container {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    border: 1px solid #FF5757;
+    padding: 15px;
+    margin: 5px 0;
+    border-radius: 20px 20px 20px 6px;
+  }
+
+  .comment-container img {
+    height: 40px;
+    width: 40px;
+    box-shadow: 1px 1px 3px rgba(51, 51, 51, 0.192);
+    object-fit: cover;
+  }
+
+  .left-part-comment img {
+    border-radius: 30px;
+  }
+
+  .comment-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .comment-header .pseudo {
+    display: flex;
+  }
+
+  .comment-header .pseudo h3 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .comment-header .pseudo span {
+    transform: translate(6px, 4px);
+    cursor: pointer;
+  }
+
+  .comment-header .pseudo img {
+    box-shadow: none;
+    height: 15px;
+    width: 15px;
+  }
+
+  .comment-header span {
+    font-size: 0.9rem;
+    font-style: italic;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .edit-comment img {
+    float: right;
+    margin-left: 10px;
+    cursor: pointer;
+    box-shadow: none;
+    height: 15px;
+    width: 15px;
+  }
+
+  .edit-comment-form {
+    margin-top: 14px;
+  }
+
+  .edit-comment-form label {
+    width: 155px;
+    background: #57ffff;
+    padding: 6px 12px 5px;
+    border-radius: 20px 20px 20px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+
+
+  .btn-comment {
+    display: flex;
+  }
+
+  .btn-comment span {
+    background: white;
+    padding: 10px 5px;
+    border-radius: 50px;
+    margin-right: 6px;
+    cursor: pointer;
+  }
+
+  .btn-comment img {
+    transform: translate(-5px, 0);
+  }
+
+  .comment-form {
+    margin-top: 6px;
+  }  
