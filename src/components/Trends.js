@@ -52,7 +52,7 @@ function Trends() {
                                                 return (
                                                     <img src={`./uploads/profil/${user.picture}`} alt="profile-pic"></img>
                                                 )
-                                            } else return null
+                                            } else return null 
                                         })}
                                         </>
                                     )}
