@@ -56,7 +56,7 @@ function FriendsHint() {
                             if (user === usersData[i]._id) {
                                 return (
                                     <li className="user-hint" key={user}>
-                                        <img src={`https://delagram-app-api.onrender.com/client/public/uploads/profil/${usersData[i].picture}`} alt="user-pic"></img>
+                                        <img src={`./uploads/profil/${usersData[i].picture}`} alt="user-pic"></img>
                                         <p>{usersData[i].pseudo}</p>
                                         <FollowHandler idToFollow={usersData[i]._id} type={"suggestion"}></FollowHandler>
                                     </li>

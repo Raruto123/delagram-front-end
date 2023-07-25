@@ -41,7 +41,7 @@ function Trends() {
                         return(
                             <li key={post._id}>
                                 <div>
-                                    {post.picture && <img src={`https://delagram-app-api.onrender.com/client/public/uploads/posts/${post.picture}`} alt="post-pic"></img>}
+                                    {post.picture && <img src={`./uploads/posts/${post.picture}`} alt="post-pic"></img>}
                                     {post.video && (
                                         <iframe src={post.video} title={post._id} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullscreen></iframe>
                                     )}
@@ -50,7 +50,7 @@ function Trends() {
                                         {usersData[0] && usersData.map((user) => {
                                             if (user._id === post.posterId) {
                                                 return (
-                                                    <img src={`https://delagram-app-api.onrender.com/client/public/uploads/profil/${user.picture}`} alt="profile-pic"></img>
+                                                    <img src={`./uploads/profil/${user.picture}`} alt="profile-pic"></img>
                                                 )
                                             } else return null
                                         })}
