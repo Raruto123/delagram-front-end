@@ -33,7 +33,7 @@ function UpdateProfil() {
             <div className="update-container">
                 <div className="left-part">
                     <h3>{userPseudo}</h3>
-                    <img src={`./uploads/profil/${userPicture}`} alt="user-pic"></img>
+                    <img src={userPicture} alt="user-pic"></img>
                     <UploadImg></UploadImg>
                     <p>{error.maxSize}</p>
                     <p>{error.format}</p>
@@ -74,7 +74,7 @@ function UpdateProfil() {
                                     if (user._id === userData.following[i]) {
                                         return(
                                             <li key={user._id}>
-                                                <img src={`./uploads/profil/${user.picture}`} alt="user-pic"></img>
+                                                <img src={user.picture} alt="user-pic"></img>
                                                 <h4>{user.pseudo}</h4>
                                                 <div className="follow-handler">
                                                     <FollowHandler idToFollow = {user._id} type="suggestion"></FollowHandler>
@@ -100,7 +100,7 @@ function UpdateProfil() {
                                     if (user._id === userData.followers[i]) {
                                         return(
                                             <li key={user._id}>
-                                                <img src={`./uploads/profil/${user.picture}`} alt="user-pic"></img>
+                                                <img src={user.picture} alt="user-pic"></img>
                                                 <h4>{user.pseudo}</h4>
                                                 <div className="follow-handler">
                                                     <FollowHandler idToFollow = {user._id} type="suggestion"></FollowHandler>
