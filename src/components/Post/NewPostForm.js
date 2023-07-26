@@ -99,7 +99,7 @@ function NewPostForm() {
                         {message || postPicture || video.length > 20 ? (
                             <li className="card-container">
                                 <div className="card-left">
-                                    <img src={userData.picture} alt="user-pic"></img>
+                                    <img src={`https://delagram-app-api.onrender.com/uploads/${userData.picture}`} alt="user-pic"></img>
                                 </div>
                                 <div className="card-right">
                                     <div className="card-header">

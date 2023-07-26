@@ -76,7 +76,7 @@ function Card({ post }) {
                         {usersData.map((user) => {
                             if (user._id === post.posterId) {
                                 return (
-                                    <img src={user.picture} alt="test" className="pseudo-pic"></img>
+                                    <img src={`https://delagram-app-api.onrender.com/uploads/${user.picture}`} alt="test" className="pseudo-pic"></img>
                                 )
                             }
                             return null
@@ -107,7 +107,7 @@ function Card({ post }) {
                                 <button className="btn" onClick={UpdateItem}>Valider modification</button>
                             </div>
                         )}
-                        {post.picture && <img src={post.picture} alt="card-pic" className="card-pic"></img>}
+                        {post.picture && <img src={`https://delagram-app-api.onrender.com/uploads/${post.picture}`} alt="card-pic" className="card-pic"></img>}
                         {post.video && (
                             <iframe width="500" height="300" src={post.video} title={post._id} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullscreen></iframe>
                         )}
